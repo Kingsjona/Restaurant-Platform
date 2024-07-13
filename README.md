@@ -1,1 +1,1 @@
-Project developed by CHUKWUDI KINGSLEY IBE
+Restaurant website developed by CHUKWUDI KINGSLEY IBE
