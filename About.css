@@ -1,0 +1,41 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    list-style: none;
+    text-align: center;
+    margin: 5% 0;
+    background-color: rgba(0, 0, 100, 0.5);
+}
+
+main{
+    background-color: aquamarine;
+}
+
+h1{
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    background-color: gray;
+}
+
+footer > div{
+    flex: 1;
+}
+
+@media screen and (max-width: 430px ) {
+    footer{
+        display: grid;
+        text-align: center;
+    }
+    
+    footer > div{
+        width: 100%;
+    }
+}

@@ -1,0 +1,62 @@
+header {
+    display: flex;
+    justify-content: center;/*centered horizontally*/
+    align-items: center;/* centered vertically*/
+}
+
+nav{
+    background-color: rgba(0, 0, 100, 0.5);
+}
+
+main{
+    background-color: aquamarine;
+}
+
+footer{
+    background-color: gray;
+}
+
+nav ul{
+    list-style: none;/*Eliminates the dot icon of the list*/
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+ .order{
+    margin-top: 20px;
+}
+
+input{
+    border: 2px solid blue ;
+}
+
+input:focus:invalid{
+    border-color: red;
+}
+
+button:hover{
+    background-color: grey;
+}
+
+footer{
+    text-align: center;
+    display: flex;
+}
+
+footer div{
+    flex: 1;
+}
+
+@media screen and (max-width: 430px){
+    footer{
+        display: grid;
+        text-align: center;
+    }
+}

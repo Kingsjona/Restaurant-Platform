@@ -1,0 +1,187 @@
+header {
+    display: flex;
+    justify-content: center;/*horizontally centered*/
+    align-items: center;/*horizontally centered*/
+}
+
+header > img{
+    animation: slide_for_me 10s ease-in-out;
+}
+
+@keyframes slide_for_me{
+    50%{
+        content: url("image_folder/logo.png");/*changes the image to logo.png*/
+    }
+    75%{
+        width: 200px;/*cexpands the width to 200px*/
+    }
+}
+
+nav{
+    background-color: rgba(0, 0, 100, 0.5);
+}
+
+.promo{
+    border: 3px solid green;
+    text-align: center;
+    border-radius: 5%;
+}
+
+main{
+    background-color: aquamarine;
+}
+
+main > .container{
+    border: 2px solid green;
+}
+
+footer{
+    background-color: gray;
+}
+nav ul{
+    list-style: none;/*Eliminates the list dot icon*/
+    text-align: center;
+    margin: 5% 20%;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 2%;
+}
+
+h1{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.menu{
+    display: flex;
+}
+
+section{
+    flex: 1;
+    background-color: antiquewhite;
+}
+
+section .foodname{
+    text-align: center;
+}
+
+section:hover{
+    border: 4px solid purple;
+}
+
+form > .container{
+    display: inline-flex;
+    border: 2px solid green;
+    align-items: center;/*centered items vertically*/
+}
+
+.row{
+    flex: 1;
+    background-color: aquamarine;
+    border: 2px solid green;
+    margin: 0.5% 0.5%;
+}
+
+@media screen and (max-width: 430px) {
+    section {
+        display: grid;
+        width: 100%;
+        border-radius: 2%;
+        background-color: aquamarine;
+    }
+    .menu{
+        display: grid;
+        width: 100vw;
+    }
+    section{
+        border: 2px solid blue;
+        margin: 2% 5%;
+        width: 80%;
+    }
+    section  img  {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section .price, .foodname {
+        text-align: center;
+    }
+    .order{
+        display: inline-block;
+        border-radius: 2%;
+        margin: 3px;
+    }
+
+     form .container{
+        display: grid;
+     }
+    
+    footer{
+        display: grid ;
+        grid-template-rows: auto auto;/*two rows 
+        of auto sizes where expands proprtional to contents*/ 
+        border: 2px solid purple;
+        align-items: center;
+        text-align: center;
+   }
+
+   footer img{
+        grid-row: 1;
+   }
+
+   footer p{
+    grid-row: 2;
+   }
+    
+}
+
+h2{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+.row{
+    margin-top: 0.5px;
+}
+.row:hover{
+    display: inline-block;
+    border: 4px solid blue;
+    border-radius: 5px;
+}
+
+button{
+    margin: 20px 0;
+    color: blueviolet;
+}
+
+button:hover{
+    background-color: rgba(0, 100, 0, 0.5 );
+}
+
+
+footer{
+    display: flex;
+    text-align: center;
+    align-items: center;/* vertically centered*/
+    border: 2px solid green;
+}
+
+footer div{
+    flex: 1;/*sets both the shrink, base and expansion of both items to equal size*/
+}
+
+footer > div{
+    border: 2px solid green;
+    margin: 1% 1%;/*0.5 for left and right*/
+
+}
+
+
+.description{
+    font-style: italic;
+}

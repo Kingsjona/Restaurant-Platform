@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Below are for Meta datas-->
+        <meta name="author" content="Kingsley Ibe">
+        <meta name="description" content="Kings first website">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <!--Below are for Open Graph Protocol-->
+        <meta property="og:title" content="Little Lemon" />
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="Asset 20@4x.png" />
+        <meta property="og:url" content="https://www.littlelemon.org" />
+        <meta property="og:description" content="Little Lemon is an apex kind of restaurant and category king in continental dishes" />
+        <meta property="og:locale" content="en_US" />
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <img src="image_folder/Asset 20@4x.png" width="100px" height="150px">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="container">
+                <div class="promo">
+                    <mark>Alert:</mark> <p>30% Discount this week on any of your food choice</p>
+                </div>
+                <h1>Our Menu</h1>
+                <div class="menu">
+                        <section>
+                        <div class="foodname">Fried Rice</div>
+                        <img src="image_folder/fried_rice.jpg" width="150px" height="100px">
+                        <b class="price">$13</b>
+                        <p class="description">Made of: Fragrant cooked rice, expertly stir-fried with an array of colorful vegetables, scrambled eggs, and a tantalizing blend of savory and aromatic sauces.</p>
+                    </section>
+                    <section>
+                        <div class="foodname">Pizza</div>
+                        <img src="image_folder/pizza.jpg" width="150px" height="100px">
+                        <b class="price">$7</b>
+                        <p class="description">Made of: A flatbread topped with tomato sauce, melted cheese, and various toppings such as pepperoni, mushrooms, and bell peppers.</p>
+                    </section>
+                    <section>
+                        <div class="foodname">Falafe</div>
+                        <img src="image_folder/falafel.jpg" width="150px" height="100px">
+                        <b class="price">$10</b>
+                        <div class="description">Made of: Deep-fried patties or balls made from ground chickpeas or fava beans, mixed with herbs and spices. </div>
+                    </section>
+                </div>
+            </div>
+            <h2>Order Online</h2>
+            <form>
+                <div class="container">
+                    <div class="row">
+                        <div class="order">
+                            <label for="fried_rice">Fried Rice:</label>
+                            <input type="checkbox" id="fried_rice" name="Fried_rice">
+                            <label for="rice_quantity">Quantity:</label>
+                            <input type="range" id="rice_quantity" name="rice_quantity" value="5" min="1" max="10" oninput="this.nextElementSibling.textContent=this.value + ' plate(s)'">
+                            <output>5 plate(s)</output>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="order">
+                            <label for="pizza">Pizza:</label>
+                            <input type="checkbox" id="pizza" name="Pizza">
+                            <label for="pizza_quantity">Quantity:</label>
+                            <input type="range" id="pizza_quantity" name="Pizza_quantity" value="5" min="1" max="10" oninput="this.nextElementSibling.textContent=this.value + ' plate(s)'">
+                            <output>5 plate(s)</output> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="order">
+                            <label for="falafe">Falafe:</label>
+                            <input type="checkbox" id="falafe" name="Falafe">
+                            <label for="falafe_quantity">Quantity:</label>
+                            <input type="range" id="falafe_quantity" name="falafe_quantity" value="5" min="1" max="10" oninput="this.nextElementSibling.textContent=this.value + ' plate(s)'">
+                            <output>5 plate(s)</output>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit">
+                    <button type="submit">Order</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="contactNdaddress">
+                <img src="image_folder/logo.png" width="100px" height="100px">
+            </div>
+            <div>
+                <p>Copyright-little Lemon Restaurant</p>
+            </div>
+        </footer>
+    </body>
+</html>

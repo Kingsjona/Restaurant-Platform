@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Below are Meta data for search engine optimization-->
+        <meta name="author" content="Kingsley Ibe">
+        <meta name="description" content="Book a Table at Little Lemon">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width">
+
+        <!--Below are meta data for OPG(Open Graph Protocol)-->
+        <meta property="og:title" content="Book a Table" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="Asset 20@4x.png" />
+        <meta property="og:url" content="https://www.littlelemon.org/bookings">
+        <meta property="og:description" content="book your table today to create lasting memory with your friends or loved ones" />
+        <meta property="og:locale" content="en_US" />
+        <link rel="stylesheet" href="bookings.css">
+    </head>
+    <body>
+        <header>
+            <img src="image_folder/Asset 20@4x.png" width="100px" height="150px">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Book a table</h1>
+            <form action="myserver.com" method="POST">
+                <div class="booking">
+                    <div class="order">
+                        <label for="num_of_persons">Number of Persons:</label><br>
+                        <input type="range" id="num_of_persons" name="num_of_persons" value="5" min="1" max="10" oninput="this.nextElementSibling.textContent=this.value + ' Person(s)'">
+                        <output>5 Person(s)</output>
+                    </div>
+                    <div class="order">
+                        <label for="location">Location:</label><br>
+                        <input id="location" name="location" list="locations" required>
+                        <datalist id="locations">
+                            <option value="NewYork"></option>
+                            <option value="Washignton"></option>
+                            <option value="Miami"></option>
+                        </datalist>
+                    </div>
+                    <div class="order">
+                        <label for="choose_date">Select date:</label><br>
+                        <input type="date" id="choose_date" name="date" required>
+                    </div>
+                    <div class="order">
+                        <label for="telephone">Moblie number:</label><br>
+                        <input type="tel" id="telephone" name="telephone" min"9" max="10" required>
+                    </div>
+                    <div class="order">
+                        <label for="address">Address:</label><br>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="order">
+                        <button type="submit">Book Table</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="contactNdaddress">
+                <h4>Contacts</h4>
+                <i>Phone: +1 (555) 123-4567</i>
+                <p><a href="mailto:Info@littlelemon.org">Email us: Info@littlelemon.org </a></p>
+                <h4>Address</h4>
+                <p>Chicago, Illinois</p>
+            </div>
+            <div>
+                <p>Copyright-little Lemon Restaurant</p>
+            </div>    
+        </footer>
+    </body>
+</html>
