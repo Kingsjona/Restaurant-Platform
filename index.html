@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <script src="indexjavascript.js"></script>
         <header>
             <img src="image_folder/Asset 20@4x.png" width="100px" height="150px">
         </header>
@@ -62,8 +63,9 @@
                             <label for="fried_rice">Fried Rice:</label>
                             <input type="checkbox" id="fried_rice" name="Fried_rice">
                             <label for="rice_quantity">Quantity:</label>
-                            <input type="range" id="rice_quantity" name="rice_quantity" value="5" min="1" max="10" oninput="this.nextElementSibling.textContent=this.value + ' plate(s)'">
+                            <input type="range" id="rice_quantity" name="rice_quantity" value="5" min="1" max="10" oninput="this.nextElementSibling.textContent=this.value + ' plate(s)'; TotalAmount('rice_quantity', 'rice_price', 13)">
                             <output>5 plate(s)</output>
+                            <div id="rice_price">Price:$13</div>
                         </div>
                     </div>
                     <div class="row">
@@ -71,17 +73,19 @@
                             <label for="pizza">Pizza:</label>
                             <input type="checkbox" id="pizza" name="Pizza">
                             <label for="pizza_quantity">Quantity:</label>
-                            <input type="range" id="pizza_quantity" name="Pizza_quantity" value="5" min="1" max="10" oninput="this.nextElementSibling.textContent=this.value + ' plate(s)'">
-                            <output>5 plate(s)</output> 
+                            <input type="range" id="pizza_quantity" name="Pizza_quantity" value="5" min="1" max="10" oninput="this.nextElementSibling.textContent=this.value + ' pizza(s)'; TotalAmount('pizza_quantity', 'pizza_price', 7)">
+                            <output>5 pizza(s)</output> 
+                            <div id="pizza_price">Price:$7</div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="order">
-                            <label for="falafe">Falafe:</label>
-                            <input type="checkbox" id="falafe" name="Falafe">
-                            <label for="falafe_quantity">Quantity:</label>
-                            <input type="range" id="falafe_quantity" name="falafe_quantity" value="5" min="1" max="10" oninput="this.nextElementSibling.textContent=this.value + ' plate(s)'">
+                            <label for="falafel">Falafe:</label>
+                            <input type="checkbox" id="falafel" name="Falafe">
+                            <label for="quantity">Quantity:</label>
+                            <input type="range" id="falafel_quantity" name="falafe_quantity" value="5" min="1" max="10" oninput="this.nextElementSibling.textContent=this.value + ' plate(s)'; TotalAmount('falafel_quantity', 'falafel_price', 10)">
                             <output>5 plate(s)</output>
+                            <div id="falafel_price">Price:$10</div>
                         </div>
                     </div>
                 </div>
