@@ -17,37 +17,79 @@ header > img{
     }
 }
 
-nav{
-    background-color: rgba(0, 0, 100, 0.5);
-}
-
 .promo{
-    border: 3px solid green;
     text-align: center;
     border-radius: 5%;
+}
+
+#promo_banner{
+    width: 100%;
+    display: block;
 }
 
 main{
     background-color: aquamarine;
 }
 
-main > .container{
+main  > .container{
     border: 2px solid green;
 }
 
-footer{
-    background-color: gray;
-}
+
 nav ul{
+    background-color:  green;
     list-style: none;/*Eliminates the list dot icon*/
     text-align: center;
-    margin: 5% 20%;
+    margin: 5% 35%;
+    padding: 1% 1%;
+    border-radius: 25px;
+
 }
 
 nav li{
     display: inline-block;
     margin: 0 2%;
 }
+
+ li a{
+    color: white;
+    text-decoration: none;
+}
+
+li a:visited{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+li a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    font-size: 1.1em;
+}
+
+.promo > h1, h3{
+    margin : 2% 35%;
+    padding: 5px 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: rgb(237, 237, 157);
+    
+    text-shadow: 
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 31px #fff,
+        0 0 55px rgb(225, 226, 4),
+        0 0 91px rgb(225, 226, 4),
+        0 0 100px rgb(225, 226, 4),
+        0 0 122px rgb(225, 226, 4),
+        0 0 140px rgb(225, 226, 4);
+
+}
+
+.promo > h3{
+    font-style: italic;
+}
+
 
 h1{
     text-align: center;
@@ -61,6 +103,8 @@ h1{
 section{
     flex: 1;
     background-color: antiquewhite;
+    text-align: center;
+    margin: 10px 10px;
 }
 
 section .foodname{
@@ -68,37 +112,74 @@ section .foodname{
 }
 
 section:hover{
-    border: 4px solid purple;
+    box-shadow: 0px 0px 30px rgba(0, 0, 100, 1);
 }
 
-form > .container{
-    display: inline-flex;
-    border: 2px solid green;
-    align-items: center;/*centered items vertically*/
+#order_button1, #order_button2, #order_button3{
+    border-radius: 10px;
 }
 
-.row{
+.order_container{
+    display: none;
+    text-align: center;
+    border: 1px solid;
+}
+
+.order_section{
     flex: 1;
-    background-color: aquamarine;
-    border: 2px solid green;
-    margin: 0.5% 0.5%;
+    border: 1px solid;
+    margin: 10px 5px;
 }
+
+form button{
+    border-radius: 10px;
+}
+
+.order_section:hover{
+    box-shadow: 0px 0px 30px rgba(0, 0, 100, 1);
+}
+output, #rice_price, #pizza_price, #falafel_price {
+    font-weight: bold;
+}
+
+
+form .close{
+    color: rgba(0, 100, 0, 0.5);
+    margin-top: -8px;
+    margin-right: -90%;
+    border-radius: 100px;
+}
+
+
+
+form .close:hover{
+    background-color: 10px solid red;
+    border: 2px solid red;
+}
+
+
+input {
+    display: block;
+    margin: 2% auto;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+
+
 
 @media screen and (max-width: 430px) {
     section {
         display: grid;
-        width: 100%;
+        margin: 2% 2%;
+        width: 80%;
         border-radius: 2%;
         background-color: aquamarine;
+        border: 2px solid;
     }
     .menu{
         display: grid;
         width: 100vw;
-    }
-    section{
-        border: 2px solid blue;
-        margin: 2% 5%;
-        width: 80%;
     }
     section  img  {
         display: block;
@@ -108,16 +189,18 @@ form > .container{
     section .price, .foodname {
         text-align: center;
     }
-    .order{
-        display: inline-block;
-        border-radius: 2%;
-        margin: 3px;
+
+    .order_container{
+        display: grid;
+        width: 100vw;
     }
 
-     form .container{
-        display: grid;
-     }
-    
+    .order_section{
+        display: block;
+        width: 89%;
+        margin: 2% 2%;
+    }
+
     footer{
         display: grid ;
         grid-template-rows: auto auto;/*two rows 
@@ -141,18 +224,7 @@ h2{
     text-align: center;
 }
 
-form{
-    text-align: center;
-}
 
-.row{
-    margin-top: 0.5px;
-}
-.row:hover{
-    display: inline-block;
-    border: 4px solid blue;
-    border-radius: 5px;
-}
 
 button{
     margin: 20px 0;
@@ -161,6 +233,11 @@ button{
 
 button:hover{
     background-color: rgba(0, 100, 0, 0.5 );
+}
+
+
+footer{
+    background-color: gray;
 }
 
 

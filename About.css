@@ -5,10 +5,20 @@ header{
 }
 
 nav {
-    list-style: none;
     text-align: center;
-    margin: 5% 0;
-    background-color: rgba(0, 0, 100, 0.5);
+    margin: 5% 25%;
+    background-color: rgba(0, 100, 0, 0.9);
+    border-radius: 10px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    font-size: 1.1em;
 }
 
 main{

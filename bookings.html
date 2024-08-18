@@ -21,9 +21,7 @@
             <img src="image_folder/Asset 20@4x.png" width="100px" height="150px">
         </header>
         <nav>
-            <ul>
-                <li><a href="index.html">Home Page</a></li>
-            </ul>
+                <a href="index.html">Home Page</a>
         </nav>
         <main>
             <h1>Book a table</h1>
@@ -32,10 +30,10 @@
                     <div class="order">
                         <label for="num_of_persons">Number of Persons:</label><br>
                         <input type="range" id="num_of_persons" name="num_of_persons" value="5" min="1" max="10" oninput="this.nextElementSibling.textContent=this.value + ' Person(s)'">
-                        <output>5 Person(s)</output>
+                        <output id="QtyStyle">5 Person(s)</output>
                     </div>
                     <div class="order">
-                        <label for="location">Location:</label><br>
+                        <label for="location">Preferred Location:</label><br>
                         <input id="location" name="location" list="locations" required>
                         <datalist id="locations">
                             <option value="NewYork"></option>
